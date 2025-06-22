@@ -1,0 +1,34 @@
+.abc{
+    color: brown;
+    background-color: aqua;
+}
+.def{
+    color: red;
+    background-color: aquamarine;
+}
+.co{
+    border-radius: 20px;
+}
+.left{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+.right{
+     width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: right; 
+}
+.clear{
+    background-color: green;
+    float: none;
+}
+.rightdown{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: right;
+    clear: both;
+}

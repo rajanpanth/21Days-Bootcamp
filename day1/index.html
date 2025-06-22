@@ -1,0 +1,190 @@
+<!-- my day one -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p>Welcome to the Bootcamp</p>
+    <br>
+    <p>Welcome to the Bootcamp</p>
+    <hr>
+    <p>Welcome to the Bootcamp</p>
+    <br>
+    <strong>To make the content bold</strong>
+    <em>To make the content italic</em>
+    <br>
+    <U>To make the content underlined</U>
+    <br>
+    <SUB>To make the content subscript  (H20)</SUB>
+    <SUP>To make the content superscript</SUP>
+    <DEL>
+    To make the content deleted
+    </DEL>
+    <br>
+    <mark>To make the content highlighted</mark>
+    <br>
+    <q>To make the content quoted</q> 
+             <h1>List</h1>
+<ol type="a"  start="5">
+       <!-- start="5 " le 5 bata start garne  -->
+
+    <li>To make the content ordered list</li> -->
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ol>
+
+<ul>
+     <li>To make the content unordered list</li> 
+     <li>Dog</li>
+        <li>Cat</li>
+        <li>Elephant</li>
+</ul> 
+ <h1>Table</h1>
+<table border="10px" cellspacing="0" cellpadding="10"  width="100px">
+    <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td><a href="#">Edit</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td><a href="#">Delete</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sam Wilson</td>
+        <td><a href="#">View</a></td>
+    
+
+</table>
+<!-- Rowspan Example -->
+ <h1>Rowspan</h1>
+<table border="1" cellspacing="0" cellpadding="10"  width="100px">
+    <tr >
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    <tr valign="top">
+        <td rowspan="2">1</td>
+        <td>John Doe</td>
+        <td><a href="#">Edit</a></td>
+    </tr>
+    <tr>
+        
+        <td>Jane Smith</td>
+        <td><a href="#">Delete</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sam Wilson</td>
+        <td><a href="#">View</a></td>
+    
+
+</table>
+<!-- Colspan Example -->
+<h1>Colspan</h1>
+<table border="1" cellspacing="0" cellpadding="10"  width="100px">
+    <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td><a href="#">Edit</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td><a href="#">Delete</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td colspan="2">Sam Wilson</td>
+        
+    
+
+</table>
+
+
+     <h1>FORM part-1</h1>
+<!-- method get use garda data read garna kam hunxa(not secured),method post bhaneko chai data create or send garda chai use garne(secured),patch(seletive content only editid but puts edit all ) ,post le post garna ko laagi and delet -->
+<form method="get">
+    Normal Text <input type="text" name="name" required="">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+    <br>
+    <!-- use of readonly  -->
+     Normal Text 1<input type="text" name="n"  value="Rajan" readonly="">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+    <br>
+    <!-- use of disable  -->
+     Normal Text 2<input type="text" name="o"  value="apple"  disabled="">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+    <br>
+    <!-- use of hidden  -->
+     Normal Text 3<input type="text" name="p"  value="banana"  hidden="">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+    <br>
+    <!-- use of autofocus leads to auto focus of mouse cursor in the form -->
+     Normal Text 4<input type="text" name="q" autofocus="">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+    <br>
+    <!-- use of placeholder  and autcomplete is on which means that the content (history) is repeated or suggested but when off its delet all history-->
+     Normal Text 5<input type="text" name="r" placeholder="Enter your name" autocomplete="on">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+</form>
+    <h1>Form 2</h1>
+<form method="get" action="https://www.google.com/search" target="_blank">
+<fieldset>
+    <legend>HTML Form</legend>
+    <label for="abc">Enter first name:</label><input type="text" id="abc" name="first_name"  placeholder="Enter your first name" >
+    <hr>
+    Enter Age:<input type="number" name="age" min="1" max="100" >
+    <hr>
+    Enter Email:<input type="email" name="email" placeholder="Enter your email" >
+    
+    <hr>
+    Enter Password:<input type="password" name="password" placeholder="Enter your password" >
+    <hr>
+    Enter Gender:<input type="radio" name="gen" value="boy"  checked>MALE
+    <!-- cheked garesi defalut checked ma basxa -->
+    <input type="radio" name="gen" value="girl" >FEMALE
+    <hr>
+    Select years:
+    <select name="birthday" size="3">
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+    </select>
+    <hr>
+    <hr>
+    Message:<textarea name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>    
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+</fieldset>
+
+
+</form>
+</body>
+
+</html>

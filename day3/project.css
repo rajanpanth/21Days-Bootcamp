@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    padding: 15px 0;
+    background: #f8f8f8;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    float: left;
+    font-size: 30px;
+    color: #9e9e9e;
+
+}
+
+nav{
+    float: right;
+}
+.c{
+    clear: both;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav ul li a{
+   float: left;
+ 
+}
+nav ul li a{
+  text-decoration: none;
+   color: #9e9e9e;
+   padding: 15px;
+   letter-spacing: 5px;
+}
+.bg1{
+    background-color: aquamarine;
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+.bg1 h2{
+    padding: 20px 0;
+}
+.bg1 img{
+    border-radius: 50%;
+}
+.bg2{
+    background-color: gray;
+    color: #f8f8f8;
+    padding: 70px 0;
+    text-align: center;
+}
+.btn{
+    background-color: #fff;
+    padding: 15px 25px;
+    color: black;
+    display: inline-block ;
+    margin: 20px 0;
+    border-radius: 7%;
+}
+.bg3{
+    background-color: #f8f8f8;
+    color: black;
+    padding: 70px 0px;
+    text-align: center;
+}
+.box{
+    width: 29%;
+    margin: 30px;
+    float: left;
+}
+footer{
+    background: #2f2f2f;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}

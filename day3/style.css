@@ -1,0 +1,15 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    float: left;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+.box1{
+    background-color: lightcoral;
+    height: 200px;
+    width: 200px;
+    margin-left: 500px;
+}
