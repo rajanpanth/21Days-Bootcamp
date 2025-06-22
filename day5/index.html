@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <script>
+// console.log("Hello World!");
+username = "Rajan Pantha"; //string
+console.log(username);
+year = 18; //number
+bigNum = 12345678901234567890n; //bigint
+status = true; //boolean
+
+// important
+data = null; //null
+anotherData = undefined; //undefined
+
+console.log(username); //string
+console.log(year); //number
+console.log(bigNum); //bigint
+console.log(status); //boolean
+console.log(data); //null
+console.log(anotherData); //undefined
+
+
+
+console.log(typeof username); //string
+console.log(typeof year); //number
+console.log(typeof bigNum); //bigint
+console.log(typeof status); //boolean
+console.log(typeof data); //object
+console.log(typeof anotherData); //undefined
+
+// how to define a variable
+// var, let, const
+var name = "Rajan"; //var
+name = "Rajan Pantha"; //reassignable
+console.log(name);
+
+// es6
+let age = 19; //let
+let naame = "Rajan"; //let
+naame = "Rajan Pantha"; //reassignable
+console.log(naame);
+
+
+// concatenation
+
+console.log("My name is " + username + " and I am " + age + " years old.");
+//  another way
+console.log(`My name is ${username} and I am ${age} years old.`); //template literal
+
+console.error("This is an error message");
+console.warn("This is a warning message");
+
+const value = "true"; 
+if(value){
+    console.log("Status is true");
+} else if(value === "false") {
+    console.log("Status is false");
+} else {
+    console.log("Status is unknown");   
+}
+
+    </script>
+</body>
+</html>

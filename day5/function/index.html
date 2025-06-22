@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+    <script>
+
+        // function declaration
+        // method 1
+        // es5
+        function greet() {
+
+            console.log("Hello, World!");
+        }
+        greet(); // calling the function 
+
+
+
+        // method 2 
+        // es6
+        // arrow function(preferred in modern JS) (used in React, Node.js, etc.)
+        const printMyName = () => {
+            console.log("My name is Rajan Pantha");
+        }
+        printMyName(); // calling the function
+
+        // arguments
+        // default parameters
+        function logMyName(name = "Rajan") {
+            console.log(`My name is ${name}`);
+        }
+
+        logMyName("raj");
+        logMyName("razan");
+
+        // spread operator (...args)
+        function spreadOperator(first = "Rajan", last = "Pantha", ...args) {
+            console.log(`My name is ${first} ${last} ${args}`);
+        }
+        spreadOperator("Rajan", "Pantha", "is ", "a", "developer.");
+        // practice using spread operator in arrow function
+    </script>
+</body>
+
+</html>
