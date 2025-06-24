@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Toggle Password Visibility</h1>
+    <input type="password" name="" id="fn">
+    <button onclick="abc()">Hide/Show</button>
+    <script>
+        function abc(){
+            let a = document.getElementById("fn");
+            if(a.type === "password"){
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <hr>
+    <h1>Image Toggle</h1>
+    <button onclick="document.getElementById('abc').src = 'logo.gif'">OFF</button>
+    <img src="logo.gif"  id = 'abc' width="190px"/>
+    <button onclick="document.getElementById('abc').src = 'fb.gif' " >ON</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"><h1>Hello World!</h1></div>
+    <button onclick="document.getElementById('demo').style.display='none'">Hide</button>
+    <button onclick="document.getElementById('demo').style.display='block'">Show</button>
+    <button onclick="document.getElementById('demo').style.fontSize='99px'">Change Font Size</button>
+    <button onclick="document.getElementById('demo').style.color='red'">Change Color</button>
+    <button onclick="document.getElementById('demo').style.backgroundColor='yellow'">Change Background Color</button>
+    <button onclick="abc()">All</button>
+    <script>
+function abc(){
+    document.getElementById('demo').style.color = "blue";
+    document.getElementById('demo').style.backgroundColor = "lightgray";
+    document.getElementById('demo').style.fontSize = "24px";
+}
+
+    </script>
+</body>
+</html>

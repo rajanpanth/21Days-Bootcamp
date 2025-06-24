@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Hello World!</h1>");
+        let name = "Rajan Pantha";
+        let contact = "985654521211";
+        document.write(`<p>My name is ${name}.</p>`);
+        document.write(`<p>My contact number is ${contact}.</p>`);
+
+        document.write("My name is " + name + ".<br> and my contact number is " + contact + ".");
+
+let a = "3"
+let b = 9
+let c = + a + + b; // using unary plus operator to convert string to number
+let d = a + b // string concatenation
+document.write("<br> The value of c is: " + c);
+document.write("<br> The value of d is: " + d);
+
+let aa = 3;
+if (aa >5) {
+    document.write("<br>aa is greater than 5");
+} else if (aa < 5) {
+    document.write("<br>aa is less than 5");
+} else {
+    document.write("<br>aa is equal to 5");
+}
+
+
+let count = 0;
+while (count < 5) {
+    document.write("<br>Count is: " + count);
+    count++;
+}
+
+    </script>
+<br>
+<br>
+<br>
+    <select>
+        <option>Years</option>
+        <script>
+            let s = 2000;
+            while (s <= 2025) {
+                document.write(`<option>${s}</option>`);
+                s++;
+            }
+        </script>
+    </select>
+
+<br>
+<br>
+<br>
+<br>
+
+    <button onclick="abc('nepal', 98978844551)">Click Me Nepal</button>
+    <button onclick="abc('US', 98978774552)">Click Me USA</button>
+    <script>
+    function abc(country, contact) {
+        alert(`Country: ${country}, Contact: ${contact}`);
+    }
+    </script>
+
+
+<div id="ram" style="border: 3px solid red; padding-top: 40px;"></div>
+<button onclick="bcd()">Show Data</button>
+<script>
+    function bcd() {
+        
+    document.getElementById("ram").innerHTML = Date();
+    }
+</script>
+
+
+<br><br>
+<br>
+<div id="sita" style="border: 4px solid black; padding: 50px;"></div>
+<button onclick="tt('nepal')">Nepal</button>
+<button onclick="tt('USA')">USA</button>
+<script>
+    function tt(country) {
+    document.getElementById("sita").innerHTML = country;
+    
+    
+    }
+</script>
+</body>
+</html>

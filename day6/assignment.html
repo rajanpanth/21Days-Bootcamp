@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 40px;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    .success {
+      color: green;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    button{
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+  <form id="registerForm">
+    <label>Username:</label>
+    <input type="text" id="username" />
+    <div class="error" id="userError"></div>
+
+    <label>Email:</label>
+    <input type="text" id="email" />
+    <div class="error" id="emailError"></div>
+
+    <label>Password:</label>
+    <input type="password" id="password" />
+    <div class="error" id="passError"></div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <h3 class="success" id="successMsg"></h3>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // prevent actual form submission
+
+      // Clear previous messages
+      document.getElementById("userError").textContent = "";
+      document.getElementById("emailError").textContent = "";
+      document.getElementById("passError").textContent = "";
+      document.getElementById("successMsg").textContent = "";
+
+      // Get input values
+      const username = document.getElementById("username").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      let isValid = true;
+
+      // Validate username
+      if (username === "") {
+        document.getElementById("userError").textContent = "Username is required.";
+        isValid = false;
+      }
+
+      // Validate email
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (email === "") {
+        document.getElementById("emailError").textContent = "Email is required.";
+        isValid = false;
+      } else if (!email.match(emailPattern)) {
+        document.getElementById("emailError").textContent = "Enter a valid email.";
+        isValid = false;
+      }
+
+      // Validate password
+      if (password.length < 6) {
+        document.getElementById("passError").textContent = "Password must be at least 6 characters.";
+        isValid = false;
+      }
+
+      // Show success message if all inputs are valid
+      if (isValid) {
+        document.getElementById("successMsg").textContent = "Registration successful!";
+        document.getElementById("registerForm").reset(); // Clear the form
+      }
+    });
+  </script>
+
+</body>
+</html>

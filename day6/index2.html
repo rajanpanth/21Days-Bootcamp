@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="ab()">Menu</p>
+    <ul style="display:none;" id="nav">
+        <li><a href="">Home</a></li>
+        <li ><a href="">Services</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <script>
+function ab(){
+    let a = document.getElementById("nav");
+    if(a.style.display === "none"){
+        a.style.display = "block";
+    } else {
+        a.style.display = "none";
+    }
+        
+}
+
+
+
+    </script>
+</body>
+</html>
