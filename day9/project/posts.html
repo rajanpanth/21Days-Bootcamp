@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+ <body>
+    <nav>
+      <h3 id="userName"></h3>
+      <h3>
+        <a href="profile.html">Profile</a>
+      </h3>
+    </nav>
+
+    <div>
+      <h2 >Manage Posts</h2>
+
+      <form id="postForm">
+        Title:
+        <input
+          type="text"
+          id="postTitle"
+          placeholder="Enter post title"
+        />
+        <br />
+        <br />
+        Body:
+        <input
+          type="text"
+          id="postBody"
+          placeholder="Enter post body"
+        />
+        <br />
+        <br />
+        <button type="submit">Add Post</button>
+      </form>
+
+      <!-- <h3>Post Lists</h3> -->
+      <ul id="postList"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

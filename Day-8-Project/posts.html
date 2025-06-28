@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="posts.css"
+    />
+    <title>Day - 8 - Project</title>
+  </head>
+  <body>
+    <nav>
+      <h3 id="userName"></h3>
+      <h3>
+        <a href="profile.html">Profile</a>
+      </h3>
+    </nav>
+
+    <div>
+      <h2>Manage Posts</h2>
+
+      <form id="postForm">
+        Title:
+        <input
+          type="text"
+          id="postTitle"
+          placeholder="Enter post title"
+        />
+        <br />
+        <br />
+        Body:
+        <input
+          type="text"
+          id="postBody"
+          placeholder="Enter post body"
+        />
+        <br />
+        <br />
+        <button type="submit">Add Post</button>
+      </form>
+
+      <!-- <h3>Post Lists</h3> -->
+      <ul id="postList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

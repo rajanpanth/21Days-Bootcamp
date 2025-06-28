@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage and api calling
+    </title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+    
+        }
+        li{
+            margin: 10px 8px;
+            padding: 10px;
+            background-color: bisque;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+  <h1>Local storage</h1>  
+  UserName: 
+  <input type="text" id="username" placeholder="Enter your username">
+  <br>
+  <br>
+  <button onclick="saveUsername()">Save Username</button>
+ <br>
+ <br>
+  <button onclick="getUsername()">Get Username</button>
+   <br>
+   <br>
+  <button onclick="removeUsername()">Remove Username</button>
+  <p id="output"></p>
+
+
+  <h1>Fetch API Calling</h1>
+  <h3>https://jsonplaceholder.typicode.com/</h3>
+  <h2>Photos</h2>
+  <br>
+  <br>
+  <ul id="photoList"></ul>
+  <br>
+  <br>
+  <button onclick="fetchPhotos()">Fetch Photos</button>
+  <script src="script.js"></script>
+</body>
+</html>

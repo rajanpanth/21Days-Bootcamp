@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #5a5b5b;
+  color: #fff;
+}
+
+h3 {
+  margin: 4px 10px;
+}
+
+h3 a {
+  color: #fff;
+}
