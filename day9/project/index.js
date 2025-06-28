@@ -93,10 +93,11 @@ function patchPutPost(id) {
 }
 
 function deletePost(id) {
-  console.log(`POST Delete ID: ${id}`)
+  // console.log(`POST Delete ID: ${id}`)
   fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
     method: 'DELETE',
   })
+  
     .then(() => 
       console.log(`DELETE successfull of ID: ${id} `))
       .catch((err) => console.error(err))
