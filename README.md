@@ -33,7 +33,16 @@ Day 8: Obj, JSON, Callback Function, promise, asyn fun, Error handeling
 Day 9: Local Storage + fetch- Get, post................................
 Day 10: Fetch- Post, Put, Delete.......................................
 
-
+- **Day 1:** List elements and Basic Form  
+- **Day 2:** Basic CSS and IMG tag  
+- **Day 3:** Padding, margin, Bootstrap clone  
+- **Day 4:** SPSIOM website clone  
+- **Day 5:** JavaScript Intro + Function  
+- **Day 6:** DOM Manipulation  
+- **Day 7:** EventListener + Array  
+- **Day 8:** Objects, JSON, Callback Function, Promise, Async functions, Error Handling  
+- **Day 9:** Local Storage + Fetch – GET, POST  
+- **Day 10:** Fetch – POST, PUT, DELETE  
 
 
 ---
