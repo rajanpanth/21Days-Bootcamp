@@ -77,5 +77,32 @@ function addPost() {
 }
 
 
+function patchPutPost(id) {
+  // console.log(id)
+  fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+    // method: 'PATCH', // or 'PUT' for full update
+    method : 'PUT',
+    body: JSON.stringify({
+      title: 'Test Title',
+      body: 'Test Body',
+
+}),
+  })
+.then(()=> console.log(`PATCH successfull of ID: ${id}`))
+.catch((error) => console.error('Error:', error))
+}
+
+function deletePost(id) {
+  // console.log(`POST Delete ID: ${id}`)
+  fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+    method: 'DELETE',
+  })
+  
+    .then(() => 
+      console.log(`DELETE successfull of ID: ${id} `))
+      .catch((err) => console.error(err))
+}
+
+
 fetchPosts()
 addPost()
