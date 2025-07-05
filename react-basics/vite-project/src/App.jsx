@@ -88,6 +88,7 @@
 
 // use of state to change the component
 import React, { useState } from 'react'
+import Practice from './practice.jsx'
 const Welcome = () => {
   return (
     <h1 style={{ display: 'flex', justifyContent: 'center' }}>
@@ -106,6 +107,17 @@ const App = () => {
   // suppose this is comming from backend
   // here status is variable, setsStatus is a function to set value in variable
   const [status, setStatus] = useState(true) //useState is hook
+  const[inputContent, setInputContent] = useState('')
+
+
+  const handleOnChange = (e) => {
+    setInputContent(e.target.value)
+    // console.log(e.target.value)
+  }
+  const changeStatusFunc = () => {
+    setStatus(!status)
+    console.log(inputContent)
+  }
 
   return (
     <>
@@ -113,9 +125,20 @@ const App = () => {
         App component
       </h1>
       {status ? <Welcome /> : <NotWelcome />}
+
+
+
+      <input style={{ marginLeft: 400 }}
+      type='text'
+      placeholder='Type something to change status'
+      onChange={handleOnChange}
+      />
+      
       <button onClick={() => setStatus(!status)} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px auto', padding: '10px 20px', fontSize: '16px' }}>
         Change Status
       </button>
+      {/* add practice component */}
+      <Practice />
     </>
   )
 }
